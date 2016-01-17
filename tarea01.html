@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/> 
+	<title>EJERCICIO 1</title>
+	<style type="text/css">
+		@import "style.css";
+	</style>
+
+	
+</head>
+<body>
+	
+	<!--CABEZERA PRINCIPAL-->
+	<header>
+		<section id="titulo">
+			<h1 id="header-titulo">FUNDAMENTOS DE MAQUETACION, HTML Y CSS</h1>
+            
+		</section>
+		
+	</header>
+	<!--UN NAV PRINCIPAL LE AGREGUE UNO LI Y UL -->
+	<nav id="menu">
+		<section>
+			<div class="nav-section-div">
+				<ul>
+					<li>Inicio</li>
+					<li>Documentacion</li>
+					<li>Revistas</li>
+					<li>Imagenes</li>
+					<li>Tutoriales</li>
+					<li>Libros</li>
+				</ul>
+			</div>
+			<div class="nav-section-div">
+				<div id="bubbles">
+					<div onclick="bubbles(0);"></div>
+					<div onclick="bubbles(1);"></div>
+					<div onclick="bubbles(2);"></div>
+				</div>
+			<div id="bubblecontent">
+				<div id="rey0"><img  width="100%" src="imagenes/html5.jpg"></div>
+			</div>
+
+			</div>
+
+			<div class="nav-section-div">
+				<ul>
+					<li>body</li>
+					<li>main</li>
+					<li>footer</li>
+					<li>nav</li>
+					<li>section</li>
+					<li>div</li>
+					<li>time</li>
+					<li>main</li>
+					<li>h1</li>
+					<li>h2</li>
+					<li>h3</li>
+					<li>spam</li>
+					<li>strong</li>
+					<li>img</li>
+					<li>ul</li>
+					<li>li</li>
+					<li>br</li>
+					<li>dhr</li>
+					
+				</ul>
+			</div>
+			<div class="nav-section-div">
+				<div><img  width="100%" src="imagenes/css.jpg"></div>
+			</div>
+			<div class="nav-section-div">
+				<ul>
+					<li>Selectores</li>
+					<li>Hover</li>
+					<li>Bordes</li>
+					<li>margin</li>
+					<li>Text</li>
+					<li>Link</li>
+					<li>Tables</li>
+					<li>Box</li>
+					<li>Position</li>
+
+				</ul>
+			</div>
+			<div class="nav-section-div">
+				<div><img  width="100%" src="imagenes/javascript.png"></div>
+			</div>
+			<div class="nav-section-div">
+				<ul>
+					<li>Elementos</li>
+					<li>Eventos</li>
+					<li>Operadores</li>
+					<li>Sintaxis</li>
+					<li>Animaciones</li>
+					
+
+				</ul>
+			</div>
+
+		</section>			
+			
+	</nav>
+	<!--CONTENIDO PRINCIPAL DE LA PAGINA-->
+	<main id="principal">
+		<!--CONTENIDO DE UN ARTICULO 1-->
+		
+			<article id="seccion1" class="color">
+				<!--cabezera de articulos-->
+				<header>
+					<!--titulo de articulo-->
+					<h2>LA IMPORTANCIA DE HTML5</h2>
+					<!--etiqueta de time de articulo-->
+					<time id="fecha1" datatime="2016-01-10">la fecha es : 09/01/2016</time>
+				</header>
+					<!--le agregue una etiqueta de section-->
+					<section id="article1-section-div">
+						<div class="article1-div">
+						<img src="imagenes/html5vsflash.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+						<div class="article1-div">
+						<img src="imagenes/html5vsflash.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+						<div class="article1-div">
+						<img src="imagenes/html5vsflash.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+					</section>
+					
+					
+					<!--pies del articulo-->
+					<footer id="main-article-footer">
+						<section id="main-article-footer-section">
+							<div class="main-article-footer-section-div"><img src="imagenes/html5.jpg"></div>
+							<div class="main-article-footer-section-div"><img src="imagenes/javascript.png"></div>
+							<div class="main-article-footer-section-div"><img src="imagenes/css.jpg"></div>
+						</section>
+					</footer>
+
+						<!--articulo anidados-->
+						<article id="articulo1" class="subarticulo">
+							<time class="tiempofecha" datatime="2016-01-10">la fecha es: 09/01/2016 - la hora es:  06:16:02 pm</time>
+							
+							
+							<div class="articulo1-contenido">
+								<img class="logos" src="imagenes/html5.jpg"/>
+								<p class="articulo1-caja1-parrafo">Tras desterrar al flash, el HTML5 se ha convertido en el rey de los lenguajes web por ser semántico, adaptable, flexible, escalable y multiplataforma. En Go Móvil, y dadas sus múltiples ventajas, no dudamos en utilizarlo para el desarrollo de soluciones móviles destinadas a grandes y pequeñas empresas.
+								</p>
+							</div>
+							
+						</article>
+						<!--articulo anidados-->
+						<article class="subarticulo">
+							<p id="relleno1"> Area de comentario:
+							</p>
+						</article>
+					<!--no te entendi aqui si querias un input solo de botom o si tenia que agregar un input text para comentar + el boton-->
+					<input type="text" placeholder="comenta" id="comentar1" class="comentar"/>
+					<button class="boton" id="boton1" value="comentar">Insertar</button>
+			</article>
+
+
+		
+		
+		<!--CONTENIDO DE UN ARTICULO 2-->
+		
+			
+			<article  id="seccion2" class="color">
+			
+				<!--cabezera de la seccion 2-->
+				<header>
+					<!--titulo le agregue una etiqueta h2-->
+					<h2>LA IMPORTANCIA DE CSS</h2>
+					<time id="fecha2" datatime="2016-01-10">la fecha es : 09/01/2016</time>
+				</header>
+					
+					<!--le agregue una etiqueta de section-->
+					<section id="article1-section-div">
+						<div class="article1-div">
+						<img src="imagenes/html5css.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+						<div class="article1-div">
+						<img src="imagenes/html5css.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+						<div class="article1-div">
+						<img src="imagenes/html5css.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+					</section>
+					<!--pies del articulo-->
+					<footer id="main-article-footer">
+						<section id="main-article-footer-section">
+							<div class="main-article-footer-section-div"><img src="imagenes/html5.jpg"></div>
+							<div class="main-article-footer-section-div"><img src="imagenes/javascript.png"></div>
+							<div class="main-article-footer-section-div"><img src="imagenes/css.jpg"></div>
+						</section>
+					</footer>
+						<!--articulo anidados-->
+						<article class="subarticulo">
+							<time  class="tiempofecha" datatime="2016-01-10">la fecha es: 09/01/2016 - la hora es:  06:16:02 pm</time>
+							<div class="articulo1-contenido">
+								<img class="logos" src="imagenes/css.jpg"/>
+								<p class="articulo1-caja1-parrafo">CSS es un lenguaje utilizado en la presentación de documentos HTML. Un documento HTML viene siendo coloquialmente “una página web”. Entonces podemos decir que el lenguaje CSS sirve para organizar la presentación y aspecto de una página web.
+								</p>
+							</div>
+						</article>
+						<!--articulo anidados-->
+						<article class="subarticulo">
+							<p id="relleno2">Area de comentario:</p>
+						</article>
+					<!--no te entendi aqui si querias un input solo de botom o si tenia que agregar un input text para comentar + el boton-->
+					<input type="text" placeholder="comenta" id="comentar2" class="comentar"/>
+					<button class="boton" id="boton2" value="comentar">Insertar</button>
+
+
+			</article>
+
+		
+		
+		<!--CONTENIDO DE UN ARTICULO 3-->
+		
+			<article id="seccion3" class="color">
+				<!--cabezera de la seccion 3-->
+				<header>
+					<!--titulo-->
+					<h2>LA IMPORTANCIA DE JAVASCRIPT</h2>
+					<time id="fecha3" datatime="2016-01-10">La fecha es :  09/01/2016</time>
+
+				</header>
+					
+					<!--le agregue una etiqueta de section-->
+					<section id="article1-section-div">
+						<div class="article1-div">
+						<img src="imagenes/javascript.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+						<div class="article1-div">
+						<img src="imagenes/javascript.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+						<div class="article1-div">
+						<img src="imagenes/javascript.jpg">
+						<p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.</p>
+						</div>
+					</section>
+					<!--pies del articulo-->
+					<footer id="main-article-footer">
+						<section id="main-article-footer-section">
+							<div class="main-article-footer-section-div"><img src="imagenes/html5.jpg"></div>
+							<div class="main-article-footer-section-div"><img src="imagenes/javascript.png"></div>
+							<div class="main-article-footer-section-div"><img src="imagenes/css.jpg"></div>
+						</section>
+					</footer>
+						<!--articulo anidados-->
+						<article class="subarticulo">
+							<time class="tiempofecha" datatime="2016-01-10">la fecha es: 09/01/2016 - la hora es:  06:16:02 pm</time>
+							<div class="articulo1-contenido">
+								<img class="logos" src="imagenes/javascript.png"/>
+								<p class="articulo1-caja1-parrafo">JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,3 basado en prototipos, imperativo, débilmente tipado y dinámico. 
+								</p>
+							</div>
+						</article>
+						<!--articulo anidados-->
+						<article class="subarticulo">
+							<p id="relleno3">Area de comentario:</p>
+						</article>
+					<!--no te entendi aqui si querias un input solo de botom o si tenia que agregar un input text para comentar + el boton-->
+					<input type="text" id="comentar3" placeholder="comenta" class="comentar"/>
+					<button class="boton" id="boton3" value="comentar">Insertar</button>
+					
+
+			</article>
+
+		
+		
+
+	</main>
+	<!--PIE DE PAGINA PRINCIPAL-->
+	<footer id="pieprincipal">
+		<section id="footer-section">
+				<div class="footer-section-div">
+				<img src="imagenes/facebook.png">
+				<p>facebook</p>
+				</div>
+				<div class="footer-section-div">
+				<img src="imagenes/youtube.png">
+				<p>youtube</p>
+				</div>
+				<div class="footer-section-div">
+				<img src="imagenes/twitter2.png">
+				<p>twitter</p>
+				</div>		
+		</section>
+											
+	</footer>	
+	
+	<script type="text/javascript" src="javascript.js"></script>
+	<script type="text/javascript">
+		function comenzar () {
+			// variable global
+
+			relleno1=document.getElementById('relleno1');
+			relleno2=document.getElementById('relleno2');
+			relleno3=document.getElementById('relleno3');
+			comentar1=document.getElementById('comentar1');
+			comentar2=document.getElementById('comentar2');
+			comentar3=document.getElementById('comentar3');
+			boton1=document.getElementById('boton1');
+			boton2=document.getElementById('boton2');
+			boton3=document.getElementById('boton3');
+			boton1.addEventListener('click',comentario,false);
+			boton2.addEventListener('click',comentario,false);
+			boton3.addEventListener('click',comentario,false);
+			}
+			var x=0,y=0,z=0;
+function comentario(e){
+					
+				if (e.target.id =='boton1') {
+					
+					if (comentar1.value!='') {
+						x++;
+						var texto1=comentar1.value;
+					relleno1.innerHTML +="<br>"+x+"."+ texto1+"."+"<br>";
+					texto1=comentar1.value="";
+					};
+					
+				}else if (e.target.id == 'boton2') {
+					
+					if (comentar2.value!='') {
+						y++;
+						var texto2=comentar2.value;
+					relleno2.innerHTML +="<br>"+y+"."+ texto2+"."+"<br>";
+					texto2=comentar2.value="";
+					};
+					
+				}else if (e.target.id == 'boton3') {
+					
+					if (comentar3.value!='') {
+						z++;
+						var texto3=comentar3.value;
+					relleno3.innerHTML +="<br>"+z+"."+ texto3+"."+"<br>";
+					texto3=comentar3.value="";
+					};
+					
+				}
+					
+		}
+
+		window.addEventListener('load',comenzar,false);
+	</script>
+</body>
+</html>

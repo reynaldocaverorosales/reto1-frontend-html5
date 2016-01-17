@@ -1,0 +1,371 @@
+/* reset */
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html , body{
+	line-height: 1;
+	background-color: #fff;
+	
+}
+
+ol, ul,li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	contenido: '';
+	contenido: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*fin del reset*/
+
+/*formato a las etiquetas de primer orden*/
+	
+		body {
+			display: flex;
+			flex-flow:row wrap;
+			background-color: rgba(0, 0, 1, 0.9);
+		}
+
+		body  >nav{
+			border-radius: 10px;
+			margin: 5px;
+			padding: 5px;
+			min-width: 300px;
+
+		}
+
+		body  > header {
+			position: fixed;
+			
+			background-color: rgba(29, 15, 150, 0.6);
+			color: #fff;
+			order:1;
+			width: 100%;
+			height: 80px;
+			flex:0 1 100%;
+			font-size: 1.6em;
+
+		}
+
+
+		/*titulo del header principal*/
+		#titulo{
+			margin-top: 30px;
+			display: block;
+			text-align: center;
+
+		}
+		/*estilos del nav*/
+		body  > nav {
+			/*background-color: rgba(198, 23, 0, 0.6);*/
+			background-color: rgba(255, 255, 253, 1);
+			min-width: 300px;
+			margin-top: 90px;
+			order:2;
+			flex:0 1 15% ;
+			height: 100%;
+			margin-bottom: 10px;
+		}
+
+		body  > nav>section>.nav-section-div{
+			margin: 10px;
+			padding: 10px;
+			border: 2px solid #000;
+			border-radius: 5px;
+			
+
+		}
+
+		body  > nav >section >div > ul >li{
+			margin: 10px;
+			display: block;
+			cursor: pointer;
+			font-size: 1.5em;
+			color: #000;	
+		}
+
+		/*dandole estilos al menu*/
+		body  > nav >section >div>ul > li:hover{
+			
+			color: #000;
+			width: 80%;
+			height: auto;
+			background-color: rgba(45, 44, 186, 0.7);
+			border-radius: 5px;
+			
+		}
+
+		body  > nav >section >div > img{
+			margin: 10px;
+			width: 92%;	
+
+		}
+		
+
+		
+
+		/*estilos del main*/
+		body  > main{
+			/*background-color: rgba(25, 217, 26, 0.7);*/
+			margin-bottom: 10px;
+			background-color: rgba(255, 255, 253, 1);
+			margin-top: 90px;
+			border-radius: 10px;
+			min-width: 400px;
+			order:3;
+			flex:1 ;
+
+			
+		}
+		/*estilos a el pie principal de la pagina*/
+		body  > #pieprincipal{
+			margin: 0;
+			padding: 0;
+			background-color: rgba(75, 40, 88, 0.7);
+			order:4;
+			flex:0 1 100%;
+			height: 150px;
+			height: 100%;
+			
+		}
+
+		#pieprincipal>#footer-section{
+			display: flex;
+			flex-flow:row wrap;
+			justify-content:space-between;
+			margin: 10px;
+			padding: 10px;
+
+
+		}
+
+		#pieprincipal>#footer-section>.footer-section-div{
+			margin: 10px;
+			padding: 10px;
+			width: 30%;
+			height: 100%;
+			min-width: 200px;
+			border-radius: 5px;
+			
+
+		}
+
+		#pieprincipal>#footer-section>.footer-section-div>img{
+			width: 80px;
+			height: 70px;
+			margin: 10px;
+			float: left;
+
+		}
+
+		#pieprincipal>#footer-section>.footer-section-div>p{
+			margin: 30px;
+			margin-left: 100px;
+			font-size: 1.5em;
+			
+			color: #fff;
+			
+		}
+
+		/*estilod articulos del main*/
+			/*estilo a header del articulo1*/
+
+			.color > header{
+
+			background-color: rgba(29, 15, 150, 0.6);
+			border-radius: 10px;
+			text-align: center;
+			margin: 10px;
+			font-size: 1.5em;
+			color: #fff;
+
+			}
+			
+		
+		.color>#article1-section-div{
+			display: flex;
+			flex-flow:row wrap;
+			margin: 10px;
+			padding: 10px;	
+		}
+
+
+		.color>#article1-section-div>.article1-div>img{
+			width: 100px;
+			height: 100px;
+			float: left;
+			border-radius: 5px;
+			margin: 10px;
+		}
+
+		.color>#article1-section-div>.article1-div>p{
+			
+			margin: 10px;
+			height: 100%;
+			text-align: justify;
+		}
+
+		/*articulo 1*/
+		.color>#article1-section-div>.article1-div{
+			margin: 10px;
+			padding: 10px;
+			width: 350px;
+			height: 200px;
+			background-color: #fff;
+			border-radius: 5px;
+		}
+
+		@media screen and (max-width: 300px){
+			#article1-section-div{
+				flex-direction:column;
+			}
+		}
+
+		/*etiquetas de segundo orden*/		
+		/*seccion de articulos*/
+		.color {
+			margin: 10px;
+			padding: 10px;
+			background-color: rgba(50, 130, 219, 0.3);
+			border-radius: 10px;
+		}
+
+
+		/*parrafos dentro del articulo anidado*/
+
+		
+		
+		/*estilos a los articulos de los articulos aninados*/
+
+		.color> article{
+			margin-left: 40px;
+			margin-right: 10px;
+			background-color: rgba(58, 107, 52, 0.7);
+			border-radius: 10px;
+			
+		}
+		/*clase para articulos*/
+		.color> .subarticulo{
+			padding: 20px;
+			margin-top: 10px;
+			color: #fff;
+
+		}
+		.color> .subarticulo>p{
+			
+			font-size: 1.5em;
+			
+		}
+
+		.color> article > time{
+			margin: 10px;
+			width: 100%;
+			font-size: 1.3em;
+			color: blue;
+
+		}
+
+		.color>article>.articulo1-contenido{
+			display: flex;
+		}
+
+		.logos{
+			padding: 10px;
+			width: 80px;
+			height: 80px;
+			font-family: arial;
+		}
+
+		.articulo1-caja1-parrafo{
+			padding-top: 20px;
+			font-size: 1.2em;
+		}
+
+		/*footer*/
+		.color > footer{
+			background-color: rgba(255, 107, 31, 0.3);
+			border-radius: 10px;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		.color > #main-article-footer > #main-article-footer-section>.main-article-footer-section-div{
+			width: 29%;
+			margin: 10px;
+			
+			display: inline-block;	
+
+		}
+
+		.color > #main-article-footer > #main-article-footer-section>.main-article-footer-section-div>img{
+			width: 80px;
+			height: 70px;
+			border-radius: 5px;
+
+		}
+		
+
+		/*subarticulo etiquet tiempo*/
+		.color  > article > time{
+			border-radius: 5px;
+			margin: 10px;
+			
+		}
+
+		.color  > article > p{
+			margin: 10px;
+		}
+
+		
+		
+
+
+		.color  > .comentar{
+			width: 30%;
+			height: 20px;
+			margin-left: 40px;
+			margin-top: 10px;
+			border-radius: 5px;
+			min-width: 130px;
+
+		}
+		.color  > .boton{
+			border-radius: 5px;
+			width: 15%;
+			height: 30px;
+			color: #fff;
+			background-color: rgba(50, 130, 219, 0.9);
+			min-width: 60px;
+			
+		}
+
+		.color  > .boton:hover{
+			
+			background-color: rgba(50, 130, 219, 0.3);
+
+		}
+	
+
+		
